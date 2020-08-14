@@ -1,0 +1,77 @@
+G:\Project\SQMS\SQMS\bin\Debug\SQMS.exe.config
+G:\Project\SQMS\SQMS\bin\Debug\SQMS.exe
+G:\Project\SQMS\SQMS\bin\Debug\SQMS.pdb
+G:\Project\SQMS\SQMS\bin\Debug\EntityFramework.dll
+G:\Project\SQMS\SQMS\bin\Debug\EntityFramework.SqlServer.dll
+G:\Project\SQMS\SQMS\bin\Debug\MetroFramework.Design.dll
+G:\Project\SQMS\SQMS\bin\Debug\MetroFramework.dll
+G:\Project\SQMS\SQMS\bin\Debug\MetroFramework.Fonts.dll
+G:\Project\SQMS\SQMS\bin\Debug\EntityFramework.xml
+G:\Project\SQMS\SQMS\bin\Debug\EntityFramework.SqlServer.xml
+G:\Project\SQMS\SQMS\obj\Debug\SQMS.csprojAssemblyReference.cache
+G:\Project\SQMS\SQMS\obj\Debug\SQMS.Properties.Resources.resources
+G:\Project\SQMS\SQMS\obj\Debug\SQMS.UserDashBoard.resources
+G:\Project\SQMS\SQMS\obj\Debug\SQMS.csproj.GenerateResource.cache
+G:\Project\SQMS\SQMS\obj\Debug\SQMS.csproj.CoreCompileInputs.cache
+G:\Project\SQMS\SQMS\obj\Debug\SQMS.csproj.CopyComplete
+G:\Project\SQMS\SQMS\obj\Debug\SQMS.exe
+G:\Project\SQMS\SQMS\obj\Debug\SQMS.pdb
+G:\Project\SQMS\SQMS\obj\Debug\SQMS.Add_Booking.resources
+G:\Project\SQMS\SQMS\obj\Debug\SQMS.Registration.resources
+G:\Project\SQMS\SQMS\obj\Debug\SQMS.AuthorityDashBoard.resources
+G:\Project\SQMS\SQMS\obj\Debug\SQMS.Create_Event.resources
+G:\Project\SQMS\SQMS\obj\Debug\SQMS.LoginForm.resources
+G:\Project\SQMS\SQMS\obj\Debug\SQMS.CreateTerminal.resources
+G:\Project\SQMS\SQMS\obj\Debug\SQMS.ManageEvent.resources
+G:\Project\SQMS\SQMS\obj\Debug\SQMS.QueueExecution.resources
+G:\Project\SQMS\SQMS\obj\Debug\SQMS.Estimation.resources
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.csprojResolveAssemblyReference.cache
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.Add_Booking.resources
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.AuthorityDashBoard.resources
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.CreateTerminal.resources
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.Create_Event.resources
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.Estimation.resources
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.LoginForm.resources
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.ManageEvent.resources
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.Properties.Resources.resources
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.QueueExecution.resources
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.Registration.resources
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.UserDashBoard.resources
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.csproj.GenerateResource.Cache
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.exe
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.pdb
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\bin\Debug\SQMS.exe.config
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\bin\Debug\SQMS.exe
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\bin\Debug\SQMS.pdb
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\bin\Debug\EntityFramework.dll
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\bin\Debug\MetroFramework.Design.dll
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\bin\Debug\MetroFramework.dll
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\bin\Debug\EntityFramework.xml
+C:\Users\Sabab\Downloads\Submitted Project\SQMS\SQMS\bin\Debug\EntityFramework.SqlServer.xml
+E:\CSharp\Submitted Project\SQMS\SQMS\bin\Debug\SQMS.exe.config
+E:\CSharp\Submitted Project\SQMS\SQMS\bin\Debug\SQMS.exe
+E:\CSharp\Submitted Project\SQMS\SQMS\bin\Debug\SQMS.pdb
+E:\CSharp\Submitted Project\SQMS\SQMS\bin\Debug\EntityFramework.dll
+E:\CSharp\Submitted Project\SQMS\SQMS\bin\Debug\EntityFramework.SqlServer.dll
+E:\CSharp\Submitted Project\SQMS\SQMS\bin\Debug\MetroFramework.Design.dll
+E:\CSharp\Submitted Project\SQMS\SQMS\bin\Debug\MetroFramework.dll
+E:\CSharp\Submitted Project\SQMS\SQMS\bin\Debug\MetroFramework.Fonts.dll
+E:\CSharp\Submitted Project\SQMS\SQMS\bin\Debug\EntityFramework.xml
+E:\CSharp\Submitted Project\SQMS\SQMS\bin\Debug\EntityFramework.SqlServer.xml
+E:\CSharp\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.csprojResolveAssemblyReference.cache
+E:\CSharp\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.Add_Booking.resources
+E:\CSharp\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.AuthorityDashBoard.resources
+E:\CSharp\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.CreateTerminal.resources
+E:\CSharp\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.Create_Event.resources
+E:\CSharp\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.Estimation.resources
+E:\CSharp\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.LoginForm.resources
+E:\CSharp\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.ManageEvent.resources
+E:\CSharp\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.Properties.Resources.resources
+E:\CSharp\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.QueueExecution.resources
+E:\CSharp\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.Registration.resources
+E:\CSharp\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.UserDashBoard.resources
+E:\CSharp\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.csproj.GenerateResource.Cache
+E:\CSharp\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.exe
+E:\CSharp\Submitted Project\SQMS\SQMS\obj\Debug\SQMS.pdb

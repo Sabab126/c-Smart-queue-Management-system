@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="sqmsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="sqmscontext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Authorities" EntityType="sqmsModel.Authority" />
+    <EntitySet Name="Bookings" EntityType="sqmsModel.Booking" />
+    <EntitySet Name="Events" EntityType="sqmsModel.Event" />
+    <EntitySet Name="Terminals" EntityType="sqmsModel.Terminal" />
+    <EntitySet Name="Users" EntityType="sqmsModel.User" />
+    <AssociationSet Name="FK_Event_Authority" Association="sqmsModel.FK_Event_Authority">
+      <End Role="Authority" EntitySet="Authorities" />
+      <End Role="Event" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Booking_Event" Association="sqmsModel.FK_Booking_Event">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="Booking" EntitySet="Bookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Booking_User" Association="sqmsModel.FK_Booking_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Booking" EntitySet="Bookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Terminal_Event" Association="sqmsModel.FK_Terminal_Event">
+      <End Role="Event" EntitySet="Events" />
+      <End Role="Terminal" EntitySet="Terminals" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Authority">
+    <Key>
+      <PropertyRef Name="Akey" />
+    </Key>
+    <Property Name="Akey" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TypeofInstitute" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MaxEvents" Type="Int32" Nullable="false" />
+    <Property Name="MaxTerminal" Type="Int32" Nullable="false" />
+    <Property Name="EventCount" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Events" Relationship="sqmsModel.FK_Event_Authority" FromRole="Authority" ToRole="Event" />
+  </EntityType>
+  <EntityType Name="Booking">
+    <Key>
+      <PropertyRef Name="BID" />
+    </Key>
+    <Property Name="BID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Token" Type="Int32" Nullable="false" />
+    <Property Name="BookingDetails" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TimeRequired" Type="Int32" Nullable="false" />
+    <Property Name="UID" Type="Int32" Nullable="false" />
+    <Property Name="EID" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Event" Relationship="sqmsModel.FK_Booking_Event" FromRole="Booking" ToRole="Event" />
+    <NavigationProperty Name="User" Relationship="sqmsModel.FK_Booking_User" FromRole="Booking" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Event">
+    <Key>
+      <PropertyRef Name="EID" />
+    </Key>
+    <Property Name="EID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ename" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Edetails" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TerminalCount" Type="Int32" Nullable="false" />
+    <Property Name="EStartDay" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="EEndDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="AID" Type="Int32" Nullable="false" />
+    <Property Name="TimeRequired" Type="Int32" />
+    <NavigationProperty Name="Authority" Relationship="sqmsModel.FK_Event_Authority" FromRole="Event" ToRole="Authority" />
+    <NavigationProperty Name="Bookings" Relationship="sqmsModel.FK_Booking_Event" FromRole="Event" ToRole="Booking" />
+    <NavigationProperty Name="Terminals" Relationship="sqmsModel.FK_Terminal_Event" FromRole="Event" ToRole="Terminal" />
+  </EntityType>
+  <EntityType Name="Terminal">
+    <Key>
+      <PropertyRef Name="TID" />
+    </Key>
+    <Property Name="TID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tname" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TStartTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TEndTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TDetails" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Event" Relationship="sqmsModel.FK_Terminal_Event" FromRole="Terminal" ToRole="Event" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Userkey" />
+    </Key>
+    <Property Name="Userkey" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DOB" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Bookings" Relationship="sqmsModel.FK_Booking_User" FromRole="User" ToRole="Booking" />
+  </EntityType>
+  <Association Name="FK_Event_Authority">
+    <End Type="sqmsModel.Authority" Role="Authority" Multiplicity="1" />
+    <End Type="sqmsModel.Event" Role="Event" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Authority">
+        <PropertyRef Name="Akey" />
+      </Principal>
+      <Dependent Role="Event">
+        <PropertyRef Name="AID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Booking_Event">
+    <End Type="sqmsModel.Event" Role="Event" Multiplicity="1" />
+    <End Type="sqmsModel.Booking" Role="Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="EID" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="EID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Booking_User">
+    <End Type="sqmsModel.User" Role="User" Multiplicity="1" />
+    <End Type="sqmsModel.Booking" Role="Booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Userkey" />
+      </Principal>
+      <Dependent Role="Booking">
+        <PropertyRef Name="UID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Terminal_Event">
+    <End Type="sqmsModel.Event" Role="Event" Multiplicity="1" />
+    <End Type="sqmsModel.Terminal" Role="Terminal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="EID" />
+      </Principal>
+      <Dependent Role="Terminal">
+        <PropertyRef Name="EID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

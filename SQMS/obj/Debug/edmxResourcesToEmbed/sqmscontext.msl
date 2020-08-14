@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="sqmsModelStoreContainer" CdmEntityContainer="sqmscontext">
+    <EntitySetMapping Name="Authorities">
+      <EntityTypeMapping TypeName="sqmsModel.Authority">
+        <MappingFragment StoreEntitySet="Authority">
+          <ScalarProperty Name="EventCount" ColumnName="EventCount" />
+          <ScalarProperty Name="MaxTerminal" ColumnName="MaxTerminal" />
+          <ScalarProperty Name="MaxEvents" ColumnName="MaxEvents" />
+          <ScalarProperty Name="TypeofInstitute" ColumnName="TypeofInstitute" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="AName" ColumnName="AName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Akey" ColumnName="Akey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bookings">
+      <EntityTypeMapping TypeName="sqmsModel.Booking">
+        <MappingFragment StoreEntitySet="Booking">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="EID" ColumnName="EID" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="TimeRequired" ColumnName="TimeRequired" />
+          <ScalarProperty Name="BookingDetails" ColumnName="BookingDetails" />
+          <ScalarProperty Name="Token" ColumnName="Token" />
+          <ScalarProperty Name="BID" ColumnName="BID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Events">
+      <EntityTypeMapping TypeName="sqmsModel.Event">
+        <MappingFragment StoreEntitySet="Event">
+          <ScalarProperty Name="TimeRequired" ColumnName="TimeRequired" />
+          <ScalarProperty Name="AID" ColumnName="AID" />
+          <ScalarProperty Name="EEndDate" ColumnName="EEndDate" />
+          <ScalarProperty Name="EStartDay" ColumnName="EStartDay" />
+          <ScalarProperty Name="TerminalCount" ColumnName="TerminalCount" />
+          <ScalarProperty Name="Edetails" ColumnName="Edetails" />
+          <ScalarProperty Name="Ename" ColumnName="Ename" />
+          <ScalarProperty Name="EID" ColumnName="EID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Terminals">
+      <EntityTypeMapping TypeName="sqmsModel.Terminal">
+        <MappingFragment StoreEntitySet="Terminal">
+          <ScalarProperty Name="EID" ColumnName="EID" />
+          <ScalarProperty Name="TDetails" ColumnName="TDetails" />
+          <ScalarProperty Name="TEndTime" ColumnName="TEndTime" />
+          <ScalarProperty Name="TStartTime" ColumnName="TStartTime" />
+          <ScalarProperty Name="Tname" ColumnName="Tname" />
+          <ScalarProperty Name="TID" ColumnName="TID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="sqmsModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Userkey" ColumnName="Userkey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
